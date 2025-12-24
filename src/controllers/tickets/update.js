@@ -1,3 +1,6 @@
 export function update({ request, response, database }) {
-  response.end("Ok");
+  const { id } = request.params;
+  const { equipment, description } = request.body;
+
+  return response.end();
 }
